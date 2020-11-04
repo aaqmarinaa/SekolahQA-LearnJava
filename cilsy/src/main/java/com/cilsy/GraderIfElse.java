@@ -4,28 +4,26 @@ import java.util.Scanner;
 
 public class GraderIfElse {
 	public static void main(String[] args) {
-		int nilai;
+		int nilai1;
+		int nilai2;
 		String grade;
+		String nama;
 		Scanner scan = new Scanner(System.in);
 		
-		System.out.print("Inputkan nilai: ");
-		nilai = scan.nextInt();
+		System.out.print("Masukkan Nama: ");
+		nama = scan.nextLine();
+		System.out.print("Inputkan nilai pertama: ");
+		nilai1 = scan.nextInt();
+		System.out.print("Inputkan nilai kedua: ");
+		nilai2 = scan.nextInt();
 		
-		if (nilai >= 90) {
-			grade = "A";
-		} else if (nilai >= 80) {
-			grade = "B+";
-		} else if (nilai >= 70 ) {
-			grade = "B";
-		} else if ( nilai >= 60 ) {
-			grade = "C+";
-		} else if ( nilai >= 50 ) {
-			grade = "C";
-		} else if ( nilai >= 40 ) {
-			grade = "D";
+		if (nilai1 >= 90 && nilai2 >= 90) {
+			grade = "Selamat anda mendapatkan nilai A";
+		} else if (nilai1 >= 80 || nilai2 >= 85 ) {
+			grade = "Selamat anda mendapatkan nilai B+";
 		} else {
-			grade = "E";
+			grade = "Nilai anda adalah E, silahkan ditingkatkan kembali";
 		}
-		System.out.println("Grade: " + grade);
+		System.out.println(nama + ", " + grade);
 	}
 }
