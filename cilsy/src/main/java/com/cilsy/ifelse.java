@@ -3,16 +3,23 @@ import java.util.Scanner;
 
 public class ifelse {
 	public static void main(String[] args) {
-		int belanja = 0;
+		int nilai;
+		String nama;
 		Scanner scan = new Scanner(System.in);
 		
-		System.out.print("Total Belanja: Rp ");
-		belanja = scan.nextInt();
+		System.out.print("Nama: ");
+		nama = scan.nextLine();
+		System.out.print("Nilai: ");
+		nilai = scan.nextInt();
 		
-		if (belanja > 100000) {
-			System.out.println("Selamat Anda mendapatkan hadiah!");
+		if(nilai >= 70 && nilai <= 85) {
+			System.out.println("Selamat " + nama + ", Anda lulus dengan nilai rata-rata!");
 		}
-		
-		System.out.println("Terima kasih.....");
+		else if (nilai > 85 ) {
+			System.out.println("Selamat " +nama+ ", Anda Lulus!!");
+		}
+		else {
+			System.out.println("Maaf " + nama + ", Anda gagal.");
+		}
 	}
 }
