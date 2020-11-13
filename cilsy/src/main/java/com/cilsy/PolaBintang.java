@@ -36,7 +36,7 @@ public class PolaBintang {
             System.out.println();
         }
         
-        System.out.println("Segitiga rata kanan terbalik");
+        System.out.println("Soal 4");
         for (i = 1; i <= row; i++) {
             for (j = 1; j < i; j++) {
                 System.out.print(" ");
