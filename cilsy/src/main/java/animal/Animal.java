@@ -1,15 +1,23 @@
 package animal;
 
 public class Animal {
-	String nama;
-	int panjangBadan, umur;
-	float beratBadan;
+	int panjangBadan;
+	double beratBadan;
+	String nafas, kulit;
 	
-	void makan() {
-		System.out.println("Nyamnyamnyam makan makan");
+	void panjangBadan(int panjang) {
+		System.out.println("Panjang : " + panjang + "cm.");
 	}
 	
-	void berkemabngBiak() {
-		System.out.println("berkembang biak");
+	void beratBadan(double berat) {
+		System.out.println("Berat : " + berat + "kg.");
+	}
+	
+	void nafas(String pernafasan) {
+		System.out.println("Alat pernafasan : " + pernafasan);
+	}
+
+	void kulit(String kulit) {
+		System.out.println("Tekstur kulit : " + kulit);
 	}
 }
